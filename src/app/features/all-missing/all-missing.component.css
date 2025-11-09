@@ -31,6 +31,26 @@
 
 ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0;
+  list-style: none;
   color: #1f2937;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.count {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.placeholder {
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
 }

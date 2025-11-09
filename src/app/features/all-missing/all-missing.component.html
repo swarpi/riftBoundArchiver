@@ -6,7 +6,20 @@
     This overview combines the missing cards from every player so the group can coordinate trades
     and purchases in one place.
   </p>
-  <ul>
-    <li *ngFor="let card of missingCards">{{ card }}</li>
-  </ul>
+  <ng-container *ngIf="missingCards$ | async as missingCards; else loading">
+    <ng-container *ngIf="missingCards.length; else empty">
+      <ul>
+        <li *ngFor="let card of missingCards">
+          <span>{{ card.name }}</span>
+          <span class="count">x{{ card.count }}</span>
+        </li>
+      </ul>
+    </ng-container>
+  </ng-container>
+  <ng-template #loading>
+    <p class="placeholder">Loading missing cards...</p>
+  </ng-template>
+  <ng-template #empty>
+    <p class="placeholder">Great news! No one is missing any cards.</p>
+  </ng-template>
 </section>

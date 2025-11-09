@@ -1,0 +1,31 @@
+{
+  "players": [
+    {
+      "id": "name-1",
+      "displayName": "name-1",
+      "deckList": ["Starter Deck Alpha", "Forest Guardians"],
+      "missingCards": [
+        { "name": "Dragonfire Sigil", "count": 1 },
+        { "name": "Whispering Oaks", "count": 2 }
+      ]
+    },
+    {
+      "id": "name-2",
+      "displayName": "name-2",
+      "deckList": ["Arcane Tempest", "Mechanized Might"],
+      "missingCards": [
+        { "name": "Clockwork Drake", "count": 1 },
+        { "name": "Temporal Shift", "count": 3 }
+      ]
+    },
+    {
+      "id": "name-3",
+      "displayName": "name-3",
+      "deckList": ["Sunlit Crusaders"],
+      "missingCards": [
+        { "name": "Radiant Shield", "count": 2 },
+        { "name": "Luminous Blade", "count": 1 }
+      ]
+    }
+  ]
+}

@@ -42,7 +42,31 @@
   color: #374151;
 }
 
+.panel ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.panel ul li .count {
+  font-weight: 600;
+  color: #2563eb;
+}
+
 .panel.warning {
   border: 1px solid rgba(239, 68, 68, 0.35);
   background: rgba(254, 242, 242, 0.8);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.placeholder {
+  margin: 0;
+  color: #6b7280;
+  font-style: italic;
 }

@@ -1,0 +1,2586 @@
+[
+  {
+    "name": "Acceptable Losses",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-179.webp",
+    "file_path": "images/acceptable_losses.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Adaptatron",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-056.webp",
+    "file_path": "images/adaptatron.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ahri, Alluring",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-066.webp",
+    "file_path": "images/ahri_alluring.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ahri, Inquisitive",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-119.webp",
+    "file_path": "images/ahri_inquisitive.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ahri, Nine-Tailed Fox",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-255.webp",
+    "file_path": "images/ahri_nine-tailed_fox.webp",
+    "color": "Calm, Mind",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Albus Ferros",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-230.webp",
+    "file_path": "images/albus_ferros.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Altar to Unity",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-275.webp",
+    "file_path": "images/altar_to_unity.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Anivia, Primal",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-148.webp",
+    "file_path": "images/anivia_primal.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Annie, Dark Child",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-017.webp",
+    "file_path": "images/annie_dark_child.webp",
+    "color": "Fury, Chaos",
+    "set": "Proving Grounds",
+    "type": "Legend"
+  },
+  {
+    "name": "Annie, Fiery",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-001.webp",
+    "file_path": "images/annie_fiery.webp",
+    "color": "Fury",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Annie, Stubborn",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-010.webp",
+    "file_path": "images/annie_stubborn.webp",
+    "color": "Chaos",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Arena Bar",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-124.webp",
+    "file_path": "images/arena_bar.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Aspirant's Climb",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-276.webp",
+    "file_path": "images/aspirant_s_climb.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Ava Achiever",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-107.webp",
+    "file_path": "images/ava_achiever.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Back-Alley Bar",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-277.webp",
+    "file_path": "images/back-alley_bar.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Back to Back",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-206.webp",
+    "file_path": "images/back_to_back.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Baited Hook",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-242.webp",
+    "file_path": "images/baited_hook.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Bandle Tree",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-278.webp",
+    "file_path": "images/bandle_tree.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Bilgewater Bully",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-125.webp",
+    "file_path": "images/bilgewater_bully.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Blastcone Fae",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-097.webp",
+    "file_path": "images/blastcone_fae.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Blast of Power",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-012.webp",
+    "file_path": "images/blast_of_power.webp",
+    "color": "Order",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Blazing Scorcher",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-001.webp",
+    "file_path": "images/blazing_scorcher.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Blind Fury",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-025.webp",
+    "file_path": "images/blind_fury.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Blitzcrank, Impassive",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-067.webp",
+    "file_path": "images/blitzcrank_impassive.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Block",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-057.webp",
+    "file_path": "images/block.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Body Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-126.webp",
+    "file_path": "images/body_rune.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Brazen Buccaneer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-002.webp",
+    "file_path": "images/brazen_buccaneer.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Brynhir Thundersong",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-026.webp",
+    "file_path": "images/brynhir_thundersong.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Buff",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-XXX.webp",
+    "file_path": "images/buff.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Card"
+  },
+  {
+    "name": "Bullet Time",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-268.webp",
+    "file_path": "images/bullet_time.webp",
+    "color": "Body, Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Caitlyn, Patrolling",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-068.webp",
+    "file_path": "images/caitlyn_patrolling.webp",
+    "color": "Calm",
+    "set": "Arcane Box Set",
+    "type": "Unit"
+  },
+  {
+    "name": "Call to Glory",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-207.webp",
+    "file_path": "images/call_to_glory.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Calm Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-042.webp",
+    "file_path": "images/calm_rune.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Cannon Barrage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-127.webp",
+    "file_path": "images/cannon_barrage.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Captain Farron",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-015.webp",
+    "file_path": "images/captain_farron.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Carnivorous Snapvine",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-149.webp",
+    "file_path": "images/carnivorous_snapvine.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Catalyst of Aeons",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-138.webp",
+    "file_path": "images/catalyst_of_aeons.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Cemetery Attendant",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-165.webp",
+    "file_path": "images/cemetery_attendant.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Challenge",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-128.webp",
+    "file_path": "images/challenge.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Chaos Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-166.webp",
+    "file_path": "images/chaos_rune.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Charm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-043.webp",
+    "file_path": "images/charm.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Chemtech Enforcer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-003.webp",
+    "file_path": "images/chemtech_enforcer.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Cithria of Cloudfield",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-139.webp",
+    "file_path": "images/cithria_of_cloudfield.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Cleave",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-004.webp",
+    "file_path": "images/cleave.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Clockwork Keeper",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-044.webp",
+    "file_path": "images/clockwork_keeper.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Commander Ledros",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-231.webp",
+    "file_path": "images/commander_ledros.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Confront",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-129.webp",
+    "file_path": "images/confront.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Consult the Past",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-083.webp",
+    "file_path": "images/consult_the_past.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Convergent Mutation",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-108.webp",
+    "file_path": "images/convergent_mutation.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Crackshot Corsair",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-130.webp",
+    "file_path": "images/crackshot_corsair.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Cruel Patron",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-208.webp",
+    "file_path": "images/cruel_patron.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Cull the Weak",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-209.webp",
+    "file_path": "images/cull_the_weak.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Dangerous Duo",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-016.webp",
+    "file_path": "images/dangerous_duo.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Daring Poro",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-210.webp",
+    "file_path": "images/daring_poro.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Darius, Executioner",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-243.webp",
+    "file_path": "images/darius_executioner.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Darius, Hand of Noxus",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-253.webp",
+    "file_path": "images/darius_hand_of_noxus.webp",
+    "color": "Fury, Order",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Darius, Trifarian",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-027.webp",
+    "file_path": "images/darius_trifarian.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Dazzling Aurora",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-160.webp",
+    "file_path": "images/dazzling_aurora.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Deadbloom Predator",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-161.webp",
+    "file_path": "images/deadbloom_predator.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Decisive Strike",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-024.webp",
+    "file_path": "images/decisive_strike.webp",
+    "color": "Body, Order",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Defy",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-045.webp",
+    "file_path": "images/defy.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Discipline",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-058.webp",
+    "file_path": "images/discipline.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Disintegrate",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-005.webp",
+    "file_path": "images/disintegrate.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Divine Judgment",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-244.webp",
+    "file_path": "images/divine_judgment.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Dragon's Rage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-258.webp",
+    "file_path": "images/dragon_s_rage.webp",
+    "color": "Body, Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Draven, Showboat",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-028.webp",
+    "file_path": "images/draven_showboat.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Dr. Mundo, Expert",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-109.webp",
+    "file_path": "images/dr_mundo_expert.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Dune Drake",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-131.webp",
+    "file_path": "images/dune_drake.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Eager Apprentice",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-084.webp",
+    "file_path": "images/eager_apprentice.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Eclipse Herald",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-059.webp",
+    "file_path": "images/eclipse_herald.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ekko, Recurrent",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-110.webp",
+    "file_path": "images/ekko_recurrent.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ember Monk",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-167.webp",
+    "file_path": "images/ember_monk.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Energy Conduit",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-098.webp",
+    "file_path": "images/energy_conduit.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "En Garde",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-046.webp",
+    "file_path": "images/en_garde.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Facebreaker",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-220.webp",
+    "file_path": "images/facebreaker.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Fading Memories",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-180.webp",
+    "file_path": "images/fading_memories.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Faithful Manufactor",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-211.webp",
+    "file_path": "images/faithful_manufactor.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Falling Comet",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-085.webp",
+    "file_path": "images/falling_comet.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Falling Star",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-029.webp",
+    "file_path": "images/falling_star.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Fight or Flight",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-168.webp",
+    "file_path": "images/fight_or_flight.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Final Spark",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-022.webp",
+    "file_path": "images/final_spark.webp",
+    "color": "Order, Mind",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Find Your Center",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-047.webp",
+    "file_path": "images/find_your_center.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Fiora, Victorious",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-232.webp",
+    "file_path": "images/fiora_victorious.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Firestorm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-002.webp",
+    "file_path": "images/firestorm.webp",
+    "color": "Fury",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "First Mate",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-132.webp",
+    "file_path": "images/first_mate.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Flame Chompers",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-006.webp",
+    "file_path": "images/flame_chompers.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Flash",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-011.webp",
+    "file_path": "images/flash.webp",
+    "color": "Chaos",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Flurry of Blades",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-133.webp",
+    "file_path": "images/flurry_of_blades.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Forge of the Future",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-212.webp",
+    "file_path": "images/forge_of_the_future.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Fortified Position",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-279.webp",
+    "file_path": "images/fortified_position.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Fox-Fire",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-256.webp",
+    "file_path": "images/fox-fire.webp",
+    "color": "Calm, Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Fury Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-007.webp",
+    "file_path": "images/fury_rune.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Garbage Grabber",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-099.webp",
+    "file_path": "images/garbage_grabber.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Garen, Commander",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-013.webp",
+    "file_path": "images/garen_commander.webp",
+    "color": "Order",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Garen, Might of Demacia",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-023.webp",
+    "file_path": "images/garen_might_of_demacia.webp",
+    "color": "Body, Order",
+    "set": "Proving Grounds",
+    "type": "Legend"
+  },
+  {
+    "name": "Garen, Rugged",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-007.webp",
+    "file_path": "images/garen_rugged.webp",
+    "color": "Body",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Gemcraft Seer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-100.webp",
+    "file_path": "images/gemcraft_seer.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Gentlemen's Duel",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-008.webp",
+    "file_path": "images/gentlemen_s_duel.webp",
+    "color": "Body",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Get Excited!",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-008.webp",
+    "file_path": "images/get_excited_.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Grand Strategem",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-233.webp",
+    "file_path": "images/grand_strategem.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Grove of the God-Willow",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-280.webp",
+    "file_path": "images/grove_of_the_god-willow.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Guerilla Warfare",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-264.webp",
+    "file_path": "images/guerilla_warfare.webp",
+    "color": "Mind, Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Gust",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-169.webp",
+    "file_path": "images/gust.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Hallowed Tomb",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-281.webp",
+    "file_path": "images/hallowed_tomb.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Harnessed Dragon",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-234.webp",
+    "file_path": "images/harnessed_dragon.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Heimerdinger, Inventor",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-111.webp",
+    "file_path": "images/heimerdinger_inventor.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Herald of Scales",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-140.webp",
+    "file_path": "images/herald_of_scales.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Hextech Ray",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-009.webp",
+    "file_path": "images/hextech_ray.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Hidden Blade",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-213.webp",
+    "file_path": "images/hidden_blade.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Highlander",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-020.webp",
+    "file_path": "images/highlander.webp",
+    "color": "Body, Calm",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Icathian Rain",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-248.webp",
+    "file_path": "images/icathian_rain.webp",
+    "color": "Fury, Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Immortal Phoenix",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-037.webp",
+    "file_path": "images/immortal_phoenix.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Imperial Decree",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-221.webp",
+    "file_path": "images/imperial_decree.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Incinerate",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-003.webp",
+    "file_path": "images/incinerate.webp",
+    "color": "Fury",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Invert Timelines",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-201.webp",
+    "file_path": "images/invert_timelines.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Iron Ballista",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-017.webp",
+    "file_path": "images/iron_ballista.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Jeweled Colossus",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-086.webp",
+    "file_path": "images/jeweled_colossus.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Jinx, Demolitionist",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-030.webp",
+    "file_path": "images/jinx_demolitionist.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Jinx, Loose Cannon",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-251.webp",
+    "file_path": "images/jinx_loose_cannon.webp",
+    "color": "Fury, Chaos",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Jinx, Rebel",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-202.webp",
+    "file_path": "images/jinx_rebel.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kadregrin the Infernal",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-038.webp",
+    "file_path": "images/kadregrin_the_infernal.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kai'Sa, Daughter of the Void",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-247.webp",
+    "file_path": "images/kai_sa_daughter_of_the_void.webp",
+    "color": "Fury, Mind",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Kai'Sa, Evolutionary",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-112.webp",
+    "file_path": "images/kai_sa_evolutionary.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kai'Sa, Survivor",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-039.webp",
+    "file_path": "images/kai_sa_survivor.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Karma, Channeler",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-235.webp",
+    "file_path": "images/karma_channeler.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Karthus, Eternal",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-236.webp",
+    "file_path": "images/karthus_eternal.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kayn, Unleashed",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-189.webp",
+    "file_path": "images/kayn_unleashed.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "King's Edict",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-237.webp",
+    "file_path": "images/king_s_edict.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Kinkou Monk",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-141.webp",
+    "file_path": "images/kinkou_monk.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kog'Maw, Caustic",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-190.webp",
+    "file_path": "images/kog_maw_caustic.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Kraken Hunter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-150.webp",
+    "file_path": "images/kraken_hunter.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Last Breath",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-260.webp",
+    "file_path": "images/last_breath.webp",
+    "color": "Calm, Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Last Stand",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-069.webp",
+    "file_path": "images/last_stand.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Lecturing Yordle",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-087.webp",
+    "file_path": "images/lecturing_yordle.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Lee Sin, Ascetic",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-078.webp",
+    "file_path": "images/lee_sin_ascetic.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Lee Sin, Blind Monk",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-257.webp",
+    "file_path": "images/lee_sin_blind_monk.webp",
+    "color": "Body, Calm",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Lee Sin, Centered",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-151.webp",
+    "file_path": "images/lee_sin_centered.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Legion Rearguard",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-010.webp",
+    "file_path": "images/legion_rearguard.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Leona, Determined",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-238.webp",
+    "file_path": "images/leona_determined.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Leona, Radiant Dawn",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-261.webp",
+    "file_path": "images/leona_radiant_dawn.webp",
+    "color": "Calm, Order",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Leona, Zealot",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-079.webp",
+    "file_path": "images/leona_zealot.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Lux, Crownguard",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-014.webp",
+    "file_path": "images/lux_crownguard.webp",
+    "color": "Order",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Lux, Illuminated",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-006.webp",
+    "file_path": "images/lux_illuminated.webp",
+    "color": "Mind",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Lux, Lady of Luminosity",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-021.webp",
+    "file_path": "images/lux_lady_of_luminosity.webp",
+    "color": "Order, Mind",
+    "set": "Proving Grounds",
+    "type": "Legend"
+  },
+  {
+    "name": "Machine Evangel",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-239.webp",
+    "file_path": "images/machine_evangel.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Maddened Marauder",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-191.webp",
+    "file_path": "images/maddened_marauder.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mageseeker Warden",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-070.webp",
+    "file_path": "images/mageseeker_warden.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Magma Wurm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-011.webp",
+    "file_path": "images/magma_wurm.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Malzahar, Fanatic",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-113.webp",
+    "file_path": "images/malzahar_fanatic.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mask of Foresight",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-060.webp",
+    "file_path": "images/mask_of_foresight.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Master Yi, Honed",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-009.webp",
+    "file_path": "images/master_yi_honed.webp",
+    "color": "Body",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Master Yi, Meditative",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-004.webp",
+    "file_path": "images/master_yi_meditative.webp",
+    "color": "Calm",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Master Yi, Wuju Bladesman",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-019.webp",
+    "file_path": "images/master_yi_wuju_bladesman.webp",
+    "color": "Body, Calm",
+    "set": "Proving Grounds",
+    "type": "Legend"
+  },
+  {
+    "name": "Meditation",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-048.webp",
+    "file_path": "images/meditation.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Mega-Mech",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-088.webp",
+    "file_path": "images/mega-mech.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mind Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-089.webp",
+    "file_path": "images/mind_rune.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Mindsplitter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-192.webp",
+    "file_path": "images/mindsplitter.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Miss Fortune, Bounty Hunter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-267.webp",
+    "file_path": "images/miss_fortune_bounty_hunter.webp",
+    "color": "Body, Chaos",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Miss Fortune, Buccaneer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-193.webp",
+    "file_path": "images/miss_fortune_buccaneer.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Miss Fortune, Captain",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-162.webp",
+    "file_path": "images/miss_fortune_captain.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mistfall",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-152.webp",
+    "file_path": "images/mistfall.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Mobilize",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-134.webp",
+    "file_path": "images/mobilize.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Monastery of Hirana",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-282.webp",
+    "file_path": "images/monastery_of_hirana.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Morbid Return",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-170.webp",
+    "file_path": "images/morbid_return.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Mountain Drake",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-142.webp",
+    "file_path": "images/mountain_drake.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mushroom Pouch",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-101.webp",
+    "file_path": "images/mushroom_pouch.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Mystic Poro",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-171.webp",
+    "file_path": "images/mystic_poro.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Mystic Reversal",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-080.webp",
+    "file_path": "images/mystic_reversal.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Navori Fighting Pit",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-283.webp",
+    "file_path": "images/navori_fighting_pit.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Nocturne, Horrifying",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-194.webp",
+    "file_path": "images/nocturne_horrifying.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Noxian Drummer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-222.webp",
+    "file_path": "images/noxian_drummer.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Noxian Guillotine",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-254.webp",
+    "file_path": "images/noxian_guillotine.webp",
+    "color": "Fury, Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Noxus Hopeful",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-012.webp",
+    "file_path": "images/noxus_hopeful.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Noxus Saboteur",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-018.webp",
+    "file_path": "images/noxus_saboteur.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Obelisk of Power",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-284.webp",
+    "file_path": "images/obelisk_of_power.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Orb of Regret",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-090.webp",
+    "file_path": "images/orb_of_regret.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Order Rune",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-214.webp",
+    "file_path": "images/order_rune.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Rune"
+  },
+  {
+    "name": "Overt Operation",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-153.webp",
+    "file_path": "images/overt_operation.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Pack of Wonders",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-181.webp",
+    "file_path": "images/pack_of_wonders.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Pakaa Cub",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-135.webp",
+    "file_path": "images/pakaa_cub.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Party Favors",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-071.webp",
+    "file_path": "images/party_favors.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Peak Guardian",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-223.webp",
+    "file_path": "images/peak_guardian.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Petty Officer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-215.webp",
+    "file_path": "images/petty_officer.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Pirate's Haven",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-143.webp",
+    "file_path": "images/pirate_s_haven.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Pit Crew",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-091.webp",
+    "file_path": "images/pit_crew.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Pit Rookie",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-136.webp",
+    "file_path": "images/pit_rookie.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Playful Phantom",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-049.webp",
+    "file_path": "images/playful_phantom.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Poro Herder",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-061.webp",
+    "file_path": "images/poro_herder.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Portal Rescue",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-102.webp",
+    "file_path": "images/portal_rescue.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Possession",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-203.webp",
+    "file_path": "images/possession.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Pouty Poro",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-013.webp",
+    "file_path": "images/pouty_poro.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Primal Strength",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-154.webp",
+    "file_path": "images/primal_strength.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Progress Day",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-114.webp",
+    "file_path": "images/progress_day.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Promising Future",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-115.webp",
+    "file_path": "images/promising_future.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Qiyana, Victorious",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-155.webp",
+    "file_path": "images/qiyana_victorious.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Raging Firebrand",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-031.webp",
+    "file_path": "images/raging_firebrand.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Raging Soul",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-019.webp",
+    "file_path": "images/raging_soul.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ravenbloom Student",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-103.webp",
+    "file_path": "images/ravenbloom_student.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ravenborn Tome",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-032.webp",
+    "file_path": "images/ravenborn_tome.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Reaver's Row",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-285.webp",
+    "file_path": "images/reaver_s_row.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Rebuke",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-172.webp",
+    "file_path": "images/rebuke.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Reckoner's Arena",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-286.webp",
+    "file_path": "images/reckoner_s_arena.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Recruit",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-273.webp",
+    "file_path": "images/recruit.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Recruit the Vanguard",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-015.webp",
+    "file_path": "images/recruit_the_vanguard.webp",
+    "color": "Order",
+    "set": "Proving Grounds",
+    "type": "Spell"
+  },
+  {
+    "name": "Recruit v2",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-271.webp",
+    "file_path": "images/recruit_v2.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Recruit v3",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-272.webp",
+    "file_path": "images/recruit_v3.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Reinforce",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-062.webp",
+    "file_path": "images/reinforce.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Retreat",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-104.webp",
+    "file_path": "images/retreat.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Rhasa the Sunderer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-195.webp",
+    "file_path": "images/rhasa_the_sunderer.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Ride the Wind",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-173.webp",
+    "file_path": "images/ride_the_wind.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Riptide Rex",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-092.webp",
+    "file_path": "images/riptide_rex.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Rune Prison",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-050.webp",
+    "file_path": "images/rune_prison.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sabotage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-156.webp",
+    "file_path": "images/sabotage.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sai Scout",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-174.webp",
+    "file_path": "images/sai_scout.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Salvage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-224.webp",
+    "file_path": "images/salvage.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Scrapheap",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-182.webp",
+    "file_path": "images/scrapheap.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Scrapyard Champion",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-020.webp",
+    "file_path": "images/scrapyard_champion.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Seal of Discord",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-204.webp",
+    "file_path": "images/seal_of_discord.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Seal of Focus",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-081.webp",
+    "file_path": "images/seal_of_focus.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Seal of Insight",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-120.webp",
+    "file_path": "images/seal_of_insight.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Seal of Rage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-040.webp",
+    "file_path": "images/seal_of_rage.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Seal of Strength",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-163.webp",
+    "file_path": "images/seal_of_strength.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Seal of Unity",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-245.webp",
+    "file_path": "images/seal_of_unity.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Sett, Brawler",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-164.webp",
+    "file_path": "images/sett_brawler.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Sett, Kingpin",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-240.webp",
+    "file_path": "images/sett_kingpin.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Sett, The Boss",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-269.webp",
+    "file_path": "images/sett_the_boss.webp",
+    "color": "Body, Order",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Shakedown",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-033.webp",
+    "file_path": "images/shakedown.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Shen, Kinkou",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-241.webp",
+    "file_path": "images/shen_kinkou.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Shipyard Skulker",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-175.webp",
+    "file_path": "images/shipyard_skulker.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Showstopper",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-270.webp",
+    "file_path": "images/showstopper.webp",
+    "color": "Body, Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sigil of the Storm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-287.webp",
+    "file_path": "images/sigil_of_the_storm.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Singularity",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-105.webp",
+    "file_path": "images/singularity.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Siphon Power",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-266.webp",
+    "file_path": "images/siphon_power.webp",
+    "color": "Order, Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sky Splitter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-014.webp",
+    "file_path": "images/sky_splitter.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Smoke Screen",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-093.webp",
+    "file_path": "images/smoke_screen.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sneaky Deckhand",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-176.webp",
+    "file_path": "images/sneaky_deckhand.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Soaring Scout",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-216.webp",
+    "file_path": "images/soaring_scout.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Solari Chief",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-225.webp",
+    "file_path": "images/solari_chief.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Solari Shieldbearer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-051.webp",
+    "file_path": "images/solari_shieldbearer.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Solari Shrine",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-072.webp",
+    "file_path": "images/solari_shrine.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Sona, Harmonious",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-073.webp",
+    "file_path": "images/sona_harmonious.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Soulgorger",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-196.webp",
+    "file_path": "images/soulgorger.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Spectral Matron",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-226.webp",
+    "file_path": "images/spectral_matron.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Spirit's Refuge",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-063.webp",
+    "file_path": "images/spirit_s_refuge.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Spoils of War",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-144.webp",
+    "file_path": "images/spoils_of_war.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sprite",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-274.webp",
+    "file_path": "images/sprite.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Sprite Call",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-094.webp",
+    "file_path": "images/sprite_call.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sprite Mother",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-106.webp",
+    "file_path": "images/sprite_mother.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Stacked Deck",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-183.webp",
+    "file_path": "images/stacked_deck.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Stalwart Poro",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-052.webp",
+    "file_path": "images/stalwart_poro.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Stand United",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-053.webp",
+    "file_path": "images/stand_united.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Startipped Peak",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-288.webp",
+    "file_path": "images/startipped_peak.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Stealthy Pursuer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-177.webp",
+    "file_path": "images/stealthy_pursuer.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Stormbringer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-250.webp",
+    "file_path": "images/stormbringer.webp",
+    "color": "Body, Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Stormclaw Ursine",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-137.webp",
+    "file_path": "images/stormclaw_ursine.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Stupefy",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-095.webp",
+    "file_path": "images/stupefy.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Sun Disc",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-021.webp",
+    "file_path": "images/sun_disc.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Sunlit Guardian",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-054.webp",
+    "file_path": "images/sunlit_guardian.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Super Mega Death Rocket!",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-252.webp",
+    "file_path": "images/super_mega_death_rocket_.webp",
+    "color": "Fury, Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Symbol of the Solari",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-227.webp",
+    "file_path": "images/symbol_of_the_solari.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Targon's Peak",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-289.webp",
+    "file_path": "images/targon_s_peak.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Taric, Protector",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-074.webp",
+    "file_path": "images/taric_protector.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Tasty Faefolk",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-075.webp",
+    "file_path": "images/tasty_faefolk.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Teemo, Scout",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-197.webp",
+    "file_path": "images/teemo_scout.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Teemo, Strategist",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-121.webp",
+    "file_path": "images/teemo_strategist.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Teemo, Swift Scout",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-263.webp",
+    "file_path": "images/teemo_swift_scout.webp",
+    "color": "Mind, Chaos",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "The Arena's Greatest",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-290.webp",
+    "file_path": "images/the_arena_s_greatest.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "The Candlelit Sanctum",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-291.webp",
+    "file_path": "images/the_candlelit_sanctum.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "The Dreaming Tree",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-292.webp",
+    "file_path": "images/the_dreaming_tree.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "The Grand Plaza",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-293.webp",
+    "file_path": "images/the_grand_plaza.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "The Harrowing",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-198.webp",
+    "file_path": "images/the_harrowing.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Thermo Beam",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-022.webp",
+    "file_path": "images/thermo_beam.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "The Syren",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-184.webp",
+    "file_path": "images/the_syren.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Thousand-Tailed Watcher",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-116.webp",
+    "file_path": "images/thousand-tailed_watcher.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Tibbers",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-018.webp",
+    "file_path": "images/tibbers.webp",
+    "color": "Fury, Chaos",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Tideturner",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-199.webp",
+    "file_path": "images/tideturner.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Time Warp",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-122.webp",
+    "file_path": "images/time_warp.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Traveling Merchant",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-185.webp",
+    "file_path": "images/traveling_merchant.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Treasure Trove",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-186.webp",
+    "file_path": "images/treasure_trove.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Trifarian Gloryseeker",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-217.webp",
+    "file_path": "images/trifarian_gloryseeker.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Trifarian War Camp",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-294.webp",
+    "file_path": "images/trifarian_war_camp.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Tryndamere, Barbarian",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-034.webp",
+    "file_path": "images/tryndamere_barbarian.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Twisted Fate, Gambler",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-200.webp",
+    "file_path": "images/twisted_fate_gambler.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Udyr, Wildman",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-157.webp",
+    "file_path": "images/udyr_wildman.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Unchecked Power",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-123.webp",
+    "file_path": "images/unchecked_power.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Undercover Agent",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-178.webp",
+    "file_path": "images/undercover_agent.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Unlicensed Armory",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-023.webp",
+    "file_path": "images/unlicensed_armory.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Unyielding Spirit",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-145.webp",
+    "file_path": "images/unyielding_spirit.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Vanguard Attendant",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-016.webp",
+    "file_path": "images/vanguard_attendant.webp",
+    "color": "Order",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Vanguard Captain",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-218.webp",
+    "file_path": "images/vanguard_captain.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Vanguard Helm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-228.webp",
+    "file_path": "images/vanguard_helm.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Gear"
+  },
+  {
+    "name": "Vanguard Sergeant",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-219.webp",
+    "file_path": "images/vanguard_sergeant.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Vayne, Hunter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-035.webp",
+    "file_path": "images/vayne_hunter.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Vengeance",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-229.webp",
+    "file_path": "images/vengeance.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Vi, Destructive",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-036.webp",
+    "file_path": "images/vi_destructive.webp",
+    "color": "Fury",
+    "set": "Arcane Box Set",
+    "type": "Unit"
+  },
+  {
+    "name": "Viktor, Herald of the Arcane",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-265.webp",
+    "file_path": "images/viktor_herald_of_the_arcane.webp",
+    "color": "Order, Mind",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Viktor, Innovator",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-117.webp",
+    "file_path": "images/viktor_innovator.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Viktor, Leader",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-246.webp",
+    "file_path": "images/viktor_leader.webp",
+    "color": "Order",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Vilemaw's Lair",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-295.webp",
+    "file_path": "images/vilemaw_s_lair.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Void Gate",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-296.webp",
+    "file_path": "images/void_gate.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Void Seeker",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-024.webp",
+    "file_path": "images/void_seeker.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Volibear, Furious",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-041.webp",
+    "file_path": "images/volibear_furious.webp",
+    "color": "Fury",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Volibear, Imposing",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-158.webp",
+    "file_path": "images/volibear_imposing.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Volibear, Relentless Storm",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-249.webp",
+    "file_path": "images/volibear_relentless_storm.webp",
+    "color": "Body, Fury",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Wallop",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-146.webp",
+    "file_path": "images/wallop.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Warwick, Hunter",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-159.webp",
+    "file_path": "images/warwick_hunter.webp",
+    "color": "Body",
+    "set": "Arcane Box Set",
+    "type": "Unit"
+  },
+  {
+    "name": "Watchful Sentry",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-096.webp",
+    "file_path": "images/watchful_sentry.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Whirlwind",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-187.webp",
+    "file_path": "images/whirlwind.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Whiteflame Protector",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-082.webp",
+    "file_path": "images/whiteflame_protector.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Wielder of Water",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-055.webp",
+    "file_path": "images/wielder_of_water.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Wildclaw Shaman",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-147.webp",
+    "file_path": "images/wildclaw_shaman.webp",
+    "color": "Body",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Windswept Hillock",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-297.webp",
+    "file_path": "images/windswept_hillock.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Wind Wall",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-064.webp",
+    "file_path": "images/wind_wall.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Wizened Elder",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-065.webp",
+    "file_path": "images/wizened_elder.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Wraith of Echoes",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-118.webp",
+    "file_path": "images/wraith_of_echoes.webp",
+    "color": "Mind",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Yasuo, Remorseful",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-076.webp",
+    "file_path": "images/yasuo_remorseful.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Yasuo, Unforgiven",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-259.webp",
+    "file_path": "images/yasuo_unforgiven.webp",
+    "color": "Calm, Chaos",
+    "set": "Origin",
+    "type": "Legend"
+  },
+  {
+    "name": "Yasuo, Windrider",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-205.webp",
+    "file_path": "images/yasuo_windrider.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Zaunite Bouncer",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-188.webp",
+    "file_path": "images/zaunite_bouncer.webp",
+    "color": "Chaos",
+    "set": "Origin",
+    "type": "Unit"
+  },
+  {
+    "name": "Zaun Warrens",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-298.webp",
+    "file_path": "images/zaun_warrens.webp",
+    "color": null,
+    "set": "Origin",
+    "type": "Battlefield"
+  },
+  {
+    "name": "Zenith Blade",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-262.webp",
+    "file_path": "images/zenith_blade.webp",
+    "color": "Calm, Order",
+    "set": "Origin",
+    "type": "Spell"
+  },
+  {
+    "name": "Zephyr Sage",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGS-005.webp",
+    "file_path": "images/zephyr_sage.webp",
+    "color": "Calm",
+    "set": "Proving Grounds",
+    "type": "Unit"
+  },
+  {
+    "name": "Zhonya's Hourglass",
+    "img_url": "https://cdn.piltoverarchive.com/cards/OGN-077.webp",
+    "file_path": "images/zhonya_s_hourglass.webp",
+    "color": "Calm",
+    "set": "Origin",
+    "type": "Gear"
+  }
+]

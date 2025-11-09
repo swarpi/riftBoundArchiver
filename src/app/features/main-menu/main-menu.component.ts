@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { PLAYER_PROFILES } from '../../data/players';
+import { Observable } from 'rxjs';
+import { PlayerProfile } from '../../models/player-profile';
+import { UserDatabaseService } from '../../services/user-database.service';
 
 @Component({
   selector: 'app-main-menu',
@@ -11,5 +13,12 @@ import { PLAYER_PROFILES } from '../../data/players';
   styleUrls: ['./main-menu.component.css'],
 })
 export class MainMenuComponent {
-  readonly players = PLAYER_PROFILES;
+  protected readonly players$: Observable<PlayerProfile[]> =
+    this.userDatabase.listPlayers();
+
+  constructor(private readonly userDatabase: UserDatabaseService) {}
+
+  protected trackByPlayerId(_: number, player: PlayerProfile): string {
+    return player.id;
+  }
 }

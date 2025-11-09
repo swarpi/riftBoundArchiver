@@ -1,17 +1,22 @@
 <div class="menu">
   <section class="menu-section">
     <h2>Players</h2>
-    <div class="card-grid">
-      <a
-        class="card"
-        *ngFor="let player of players"
-        [routerLink]="['/players', player.id]"
-      >
-        <h3>{{ player.displayName }}</h3>
-        <p>{{ player.deckList.length }} deck(s) tracked</p>
-        <span class="chip">View details</span>
-      </a>
-    </div>
+    <ng-container *ngIf="players$ | async as players; else loading">
+      <div class="card-grid">
+        <a
+          class="card"
+          *ngFor="let player of players; trackBy: trackByPlayerId"
+          [routerLink]="['/players', player.id]"
+        >
+          <h3>{{ player.displayName }}</h3>
+          <p>{{ player.deckList.length }} deck(s) tracked</p>
+          <span class="chip">View details</span>
+        </a>
+      </div>
+    </ng-container>
+    <ng-template #loading>
+      <p class="placeholder">Loading player profiles...</p>
+    </ng-template>
   </section>
 
   <section class="menu-section">
@@ -21,6 +26,11 @@
         <h3>All Missing Cards</h3>
         <p>See everything the group still needs to collect.</p>
         <span class="chip">Open list</span>
+      </a>
+      <a class="card" routerLink="/deck-builder">
+        <h3>Deck Builder</h3>
+        <p>Build decks faster with live filters and card counts.</p>
+        <span class="chip">Build deck</span>
       </a>
     </div>
   </section>

@@ -1,0 +1,115 @@
+<a class="back-link" routerLink="/">&larr; Back to main menu</a>
+
+<section class="builder-grid">
+  <article class="panel">
+    <h2>Browse cards</h2>
+    <p class="description">
+      Use the search and filters to find cards. Click add to include them in your deck.
+    </p>
+    <input
+      type="search"
+      class="search-input"
+      [ngModel]="searchTerm"
+      (ngModelChange)="onSearchTermChange($event)"
+      placeholder="Search cards by name or type"
+      aria-label="Search cards"
+    />
+
+    <button type="button" class="filter-toggle" (click)="toggleFilters()">
+      {{ showFilters ? 'Hide filters' : 'Show filters' }}
+    </button>
+
+    <div class="filter-panel" *ngIf="showFilters">
+      <div class="filter-group">
+        <h4>Colors</h4>
+        <div class="chip-list">
+          <button
+            type="button"
+            class="chip-toggle"
+            *ngFor="let color of availableColors"
+            [class.active]="isColorSelected(color)"
+            (click)="toggleColor(color)"
+          >
+            {{ color }}
+          </button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <h4>Types</h4>
+        <div class="chip-list">
+          <button
+            type="button"
+            class="chip-toggle"
+            *ngFor="let type of (availableTypes$ | async) ?? []"
+            [class.active]="isTypeSelected(type)"
+            (click)="toggleType(type)"
+          >
+            {{ type }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ng-container *ngIf="searchResults$ | async as results">
+      <p class="placeholder" *ngIf="!results.length">No cards match those filters.</p>
+      <div class="results" *ngIf="results.length">
+        <article class="result" *ngFor="let card of results">
+          <img
+            class="result-preview"
+            [src]="card.imgUrl || card.filePath"
+            [alt]="card.name"
+            loading="lazy"
+          />
+          <div class="result-details">
+            <h4>{{ card.name }}</h4>
+            <p>{{ card.type || 'Unknown type' }} • {{ card.set || 'Unknown set' }}</p>
+            <p class="muted">
+              {{ card.colors.length ? card.colors.join(', ') : 'No color' }}
+            </p>
+          </div>
+          <div class="result-actions">
+            <span class="tracked" *ngIf="getDeckCount(card.name) as count">
+              In deck x{{ count }}
+            </span>
+            <button type="button" (click)="addToDeck(card)">Add to deck</button>
+          </div>
+        </article>
+      </div>
+    </ng-container>
+  </article>
+
+  <article class="panel deck-panel">
+    <div class="deck-header">
+      <h2>Deck list</h2>
+      <div class="deck-tools">
+        <span class="total">{{ totalCards }} card{{ totalCards === 1 ? '' : 's' }}</span>
+        <button type="button" (click)="clearDeck()" [disabled]="!deckEntries.length">
+          Clear deck
+        </button>
+      </div>
+    </div>
+
+    <ng-container *ngIf="deckEntries.length; else emptyDeck">
+      <ul>
+        <li *ngFor="let entry of deckEntries; trackBy: trackByCardName">
+          <div class="deck-card-info">
+            <strong>{{ entry.card.name }}</strong>
+            <p>{{ entry.card.type || 'Unknown type' }} • {{ entry.card.set || 'Unknown set' }}</p>
+            <p class="muted">
+              {{ entry.card.colors.length ? entry.card.colors.join(', ') : 'No color' }}
+            </p>
+          </div>
+          <div class="deck-card-actions">
+            <button type="button" (click)="decrement(entry.card.name)">-</button>
+            <span>x{{ entry.count }}</span>
+            <button type="button" (click)="increment(entry.card.name)">+</button>
+            <button type="button" class="link" (click)="remove(entry.card.name)">Remove</button>
+          </div>
+        </li>
+      </ul>
+    </ng-container>
+    <ng-template #emptyDeck>
+      <p class="placeholder">No cards yet. Start adding from the list on the left.</p>
+    </ng-template>
+  </article>
+</section>

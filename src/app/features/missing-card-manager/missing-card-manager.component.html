@@ -1,0 +1,129 @@
+<ng-container *ngIf="player$ | async as player; else notFound">
+  <a class="back-link" [routerLink]="['/players', player.id]">
+    &larr; Back to {{ player.displayName }}
+  </a>
+
+  <h2 class="title">Missing cards for {{ player.displayName }}</h2>
+  <div class="manager-grid">
+    <section class="panel">
+      <h3>Current list</h3>
+      <p class="description">
+        Track how many copies are missing so trades stay organized.
+      </p>
+      <ng-container *ngIf="player.missingCards.length; else emptyList">
+        <ul>
+          <li *ngFor="let card of player.missingCards; trackBy: trackByCardName">
+            <div class="card-entry">
+              <span class="card-name">{{ card.name }}</span>
+              <span class="card-count">x{{ card.count }}</span>
+            </div>
+            <div class="card-entry-actions">
+              <button type="button" (click)="decrementCard(player.id, card.name)">
+                -
+              </button>
+              <button type="button" (click)="addCard(player.id, card.name)">
+                +
+              </button>
+              <button type="button" class="link" (click)="removeCard(player.id, card.name)">
+                Remove
+              </button>
+            </div>
+          </li>
+        </ul>
+      </ng-container>
+    </section>
+
+    <section class="panel">
+      <h3>Search card database</h3>
+      <p class="description">
+        Use the filters to narrow down the results, then add as many copies as you need.
+      </p>
+      <input
+        type="search"
+        class="search-input"
+        [ngModel]="searchTerm"
+        (ngModelChange)="onSearchTermChange($event)"
+        placeholder="Search cards by name or type"
+        aria-label="Search cards"
+      />
+
+      <button type="button" class="filter-toggle" (click)="toggleFilters()">
+        {{ showFilters ? 'Hide filters' : 'Show filters' }}
+      </button>
+
+      <div class="filter-panel" *ngIf="showFilters">
+        <div class="filter-group">
+          <h4>Colors</h4>
+          <div class="chip-list">
+            <button
+              type="button"
+              class="chip-toggle"
+              *ngFor="let color of availableColors"
+              [class.active]="isColorSelected(color)"
+              (click)="toggleColor(color)"
+            >
+              {{ color }}
+            </button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <h4>Types</h4>
+          <div class="chip-list">
+            <button
+              type="button"
+              class="chip-toggle"
+              *ngFor="let type of (availableTypes$ | async) ?? []"
+              [class.active]="isTypeSelected(type)"
+              (click)="toggleType(type)"
+            >
+              {{ type }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ng-container *ngIf="searchResults$ | async as results">
+        <p class="placeholder" *ngIf="!results.length">No cards match those filters.</p>
+        <div class="results" *ngIf="results.length">
+          <article
+            class="result"
+            *ngFor="let card of results; trackBy: trackByCardName"
+          >
+            <img
+              class="result-preview"
+              [src]="card.imgUrl || card.filePath"
+              [alt]="card.name"
+              loading="lazy"
+            />
+            <div class="result-details">
+              <h4>{{ card.name }}</h4>
+              <p>{{ card.type || 'Unknown type' }} • {{ card.set || 'Unknown set' }}</p>
+              <p class="muted">{{ card.colors.length ? card.colors.join(', ') : 'No color' }}</p>
+            </div>
+            <div class="result-actions">
+              <span
+                class="tracked"
+                *ngIf="getTrackedCount(card.name, player.missingCards) as trackedCount"
+              >
+                Tracking x{{ trackedCount }}
+              </span>
+              <button type="button" (click)="addCard(player.id, card.name)">Add copy</button>
+            </div>
+          </article>
+        </div>
+      </ng-container>
+    </section>
+  </div>
+</ng-container>
+
+<ng-template #emptyList>
+  <p class="placeholder">No cards are missing right now.</p>
+</ng-template>
+
+<ng-template #notFound>
+  <a class="back-link" routerLink="/">&larr; Back to main menu</a>
+  <div class="panel warning">
+    <h3>Player not found</h3>
+    <p>We could not locate that profile. Please return to the main menu.</p>
+  </div>
+</ng-template>

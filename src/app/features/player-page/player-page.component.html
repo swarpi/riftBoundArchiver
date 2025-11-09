@@ -1,6 +1,6 @@
 <a class="back-link" routerLink="/">&larr; Back to main menu</a>
 
-<ng-container *ngIf="player; else notFound">
+<ng-container *ngIf="player$ | async as player; else notFound">
   <h2 class="title">{{ player.displayName }}</h2>
   <div class="info-grid">
     <section class="panel">
@@ -10,13 +10,31 @@
       </ul>
     </section>
     <section class="panel">
-      <h3>Missing Cards</h3>
-      <ul>
-        <li *ngFor="let card of player.missingCards">{{ card }}</li>
-      </ul>
+      <div class="panel-header">
+        <h3>Missing Cards</h3>
+        <a
+          class="chip"
+          [routerLink]="['/players', player.id, 'missing']"
+          aria-label="Manage missing cards"
+        >
+          Manage
+        </a>
+      </div>
+      <ng-container *ngIf="player.missingCards.length; else emptyMissing">
+        <ul>
+          <li *ngFor="let card of player.missingCards">
+            <span>{{ card.name }}</span>
+            <span class="count">x{{ card.count }}</span>
+          </li>
+        </ul>
+      </ng-container>
     </section>
   </div>
 </ng-container>
+
+<ng-template #emptyMissing>
+  <p class="placeholder">This player is not missing any cards.</p>
+</ng-template>
 
 <ng-template #notFound>
   <div class="panel warning">

@@ -60,3 +60,9 @@
   background: rgba(249, 250, 251, 0.2);
   color: #f9fafb;
 }
+
+.placeholder {
+  color: #6b7280;
+  font-style: italic;
+  margin: 0;
+}
