@@ -1,0 +1,12 @@
+<a class="back-link" routerLink="/">&larr; Back to main menu</a>
+
+<section class="panel">
+  <h2>{{ headline }}</h2>
+  <p class="description">
+    This overview combines the missing cards from every player so the group can coordinate trades
+    and purchases in one place.
+  </p>
+  <ul>
+    <li *ngFor="let card of missingCards">{{ card }}</li>
+  </ul>
+</section>
