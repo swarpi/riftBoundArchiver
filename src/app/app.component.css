@@ -1,0 +1,35 @@
+.layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+
+.content {
+  background: #ffffffcc;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

@@ -1,0 +1,26 @@
+<a class="back-link" routerLink="/">&larr; Back to main menu</a>
+
+<ng-container *ngIf="player; else notFound">
+  <h2 class="title">{{ player.displayName }}</h2>
+  <div class="info-grid">
+    <section class="panel">
+      <h3>Deck List</h3>
+      <ul>
+        <li *ngFor="let deck of player.deckList">{{ deck }}</li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h3>Missing Cards</h3>
+      <ul>
+        <li *ngFor="let card of player.missingCards">{{ card }}</li>
+      </ul>
+    </section>
+  </div>
+</ng-container>
+
+<ng-template #notFound>
+  <div class="panel warning">
+    <h3>Player not found</h3>
+    <p>We could not find details for this player. Please return to the main menu.</p>
+  </div>
+</ng-template>
