@@ -1,0 +1,27 @@
+<div class="menu">
+  <section class="menu-section">
+    <h2>Players</h2>
+    <div class="card-grid">
+      <a
+        class="card"
+        *ngFor="let player of players"
+        [routerLink]="['/players', player.id]"
+      >
+        <h3>{{ player.displayName }}</h3>
+        <p>{{ player.deckList.length }} deck(s) tracked</p>
+        <span class="chip">View details</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>Group Tools</h2>
+    <div class="card-grid">
+      <a class="card highlight" routerLink="/all-missing">
+        <h3>All Missing Cards</h3>
+        <p>See everything the group still needs to collect.</p>
+        <span class="chip">Open list</span>
+      </a>
+    </div>
+  </section>
+</div>
