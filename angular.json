@@ -89,5 +89,8 @@
       }
     }
   },
-  "defaultProject": "rift-bound-archiver"
+  "defaultProject": "rift-bound-archiver",
+  "cli": {
+    "analytics": false
+  }
 }
