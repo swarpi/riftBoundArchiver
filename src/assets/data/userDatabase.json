@@ -3,28 +3,71 @@
     {
       "id": "name-1",
       "displayName": "name-1",
-      "deckList": ["Starter Deck Alpha", "Forest Guardians"],
+      "decks": [
+        {
+          "id": "deck-alpha",
+          "name": "Starter Deck Alpha",
+          "cards": [
+            { "name": "Blazing Scorcher", "count": 2 },
+            { "name": "Adaptatron", "count": 3 }
+          ]
+        },
+        {
+          "id": "deck-forest",
+          "name": "Forest Guardians",
+          "cards": [
+            { "name": "Body Rune", "count": 2 },
+            { "name": "Grove of the God-Willow", "count": 1 }
+          ]
+        }
+      ],
       "missingCards": [
-        { "name": "Dragonfire Sigil", "count": 1 },
-        { "name": "Whispering Oaks", "count": 2 }
+        { "name": "Sigil of the Storm", "count": 1 },
+        { "name": "Grove of the God-Willow", "count": 2 }
       ]
     },
     {
       "id": "name-2",
       "displayName": "name-2",
-      "deckList": ["Arcane Tempest", "Mechanized Might"],
+      "decks": [
+        {
+          "id": "deck-tempest",
+          "name": "Arcane Tempest",
+          "cards": [
+            { "name": "Dune Drake", "count": 2 },
+            { "name": "Invert Timelines", "count": 1 }
+          ]
+        },
+        {
+          "id": "deck-mech",
+          "name": "Mechanized Might",
+          "cards": [
+            { "name": "Adaptatron", "count": 1 },
+            { "name": "Chemtech Enforcer", "count": 2 }
+          ]
+        }
+      ],
       "missingCards": [
-        { "name": "Clockwork Drake", "count": 1 },
-        { "name": "Temporal Shift", "count": 3 }
+        { "name": "Dune Drake", "count": 1 },
+        { "name": "Invert Timelines", "count": 3 }
       ]
     },
     {
       "id": "name-3",
       "displayName": "name-3",
-      "deckList": ["Sunlit Crusaders"],
+      "decks": [
+        {
+          "id": "deck-sunlit",
+          "name": "Sunlit Crusaders",
+          "cards": [
+            { "name": "Body Rune", "count": 3 },
+            { "name": "Hidden Blade", "count": 2 }
+          ]
+        }
+      ],
       "missingCards": [
-        { "name": "Radiant Shield", "count": 2 },
-        { "name": "Luminous Blade", "count": 1 }
+        { "name": "Body Rune", "count": 2 },
+        { "name": "Hidden Blade", "count": 1 }
       ]
     }
   ]

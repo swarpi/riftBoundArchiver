@@ -1,0 +1,11 @@
+<ng-container *ngIf="preview$ | async as preview">
+  <div class="preview-overlay" (click)="close()" aria-modal="true">
+    <div class="preview-modal" (click)="stopPropagation($event)">
+      <button type="button" class="close-preview" aria-label="Close preview" (click)="close()">
+        &times;
+      </button>
+      <img [src]="preview.imageUrl" [alt]="preview.title" />
+      <p class="preview-title">{{ preview.title }}</p>
+    </div>
+  </div>
+</ng-container>

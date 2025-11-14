@@ -1,11 +1,18 @@
-export interface MissingCardEntry {
+export interface CardCountEntry {
   name: string;
   count: number;
+}
+
+export interface DeckDefinition {
+  id: string;
+  name: string;
+  cards: CardCountEntry[];
+  sideboard?: CardCountEntry[];
 }
 
 export interface PlayerProfile {
   id: string;
   displayName: string;
-  deckList: string[];
-  missingCards: MissingCardEntry[];
+  decks: DeckDefinition[];
+  missingCards: CardCountEntry[];
 }

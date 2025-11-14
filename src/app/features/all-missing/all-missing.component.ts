@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { UserDatabaseService } from '../../services/user-database.service';
-import { MissingCardEntry } from '../../models/player-profile';
+import { CardCountEntry } from '../../models/player-profile';
 
 @Component({
   selector: 'app-all-missing',
@@ -14,7 +14,7 @@ import { MissingCardEntry } from '../../models/player-profile';
 })
 export class AllMissingComponent {
   protected readonly headline = 'Here is a list of all our missing cards';
-  protected readonly missingCards$: Observable<MissingCardEntry[]> =
+  protected readonly missingCards$: Observable<CardCountEntry[]> =
     this.userDatabase.listAllMissingCards();
 
   constructor(private readonly userDatabase: UserDatabaseService) {}

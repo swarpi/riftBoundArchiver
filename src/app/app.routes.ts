@@ -14,7 +14,7 @@ export const routes: Routes = [
     title: 'Manage Missing Cards',
   },
   {
-    path: 'deck-builder',
+    path: 'players/:id/decks/:deckId',
     component: DeckBuilderComponent,
     title: 'Deck Builder',
   },

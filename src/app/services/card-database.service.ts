@@ -42,6 +42,11 @@ export class CardDatabaseService {
       shareReplay(1)
     );
 
+  private readonly cardLookup$: Observable<Map<string, CardRecord>> = this.cards$.pipe(
+    map((cards) => new Map(cards.map((card) => [card.name.toLowerCase(), card]))),
+    shareReplay(1)
+  );
+
   private readonly types$: Observable<string[]> = this.cards$.pipe(
     map((cards) =>
       Array.from(
@@ -61,6 +66,10 @@ export class CardDatabaseService {
 
   listTypes(): Observable<string[]> {
     return this.types$;
+  }
+
+  indexedByName(): Observable<Map<string, CardRecord>> {
+    return this.cardLookup$;
   }
 
   getAvailableColors(): string[] {

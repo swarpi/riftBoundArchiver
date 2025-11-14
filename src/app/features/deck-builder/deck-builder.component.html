@@ -1,115 +1,247 @@
-<a class="back-link" routerLink="/">&larr; Back to main menu</a>
+<ng-container *ngIf="player$ | async as player; else notFound">
+  <ng-container *ngIf="deck$ | async as deck; else deckMissing">
+    <ng-container *ngIf="workingDeck as working; else loadingDeck">
+      <a class="back-link" [routerLink]="['/players', player.id]">
+        &larr; Back to {{ player.displayName }}
+      </a>
 
-<section class="builder-grid">
-  <article class="panel">
-    <h2>Browse cards</h2>
-    <p class="description">
-      Use the search and filters to find cards. Click add to include them in your deck.
-    </p>
-    <input
-      type="search"
-      class="search-input"
-      [ngModel]="searchTerm"
-      (ngModelChange)="onSearchTermChange($event)"
-      placeholder="Search cards by name or type"
-      aria-label="Search cards"
-    />
-
-    <button type="button" class="filter-toggle" (click)="toggleFilters()">
-      {{ showFilters ? 'Hide filters' : 'Show filters' }}
-    </button>
-
-    <div class="filter-panel" *ngIf="showFilters">
-      <div class="filter-group">
-        <h4>Colors</h4>
-        <div class="chip-list">
-          <button
-            type="button"
-            class="chip-toggle"
-            *ngFor="let color of availableColors"
-            [class.active]="isColorSelected(color)"
-            (click)="toggleColor(color)"
-          >
-            {{ color }}
+      <div class="title-bar">
+        <div>
+          <p class="mode-indicator" [class.editing]="isEditing">
+            {{ isEditing ? 'Editing deck' : 'Viewing deck' }}
+          </p>
+          <h2 class="title">Deck builder for {{ renameDraft || 'Untitled Deck' }}</h2>
+        </div>
+        <div class="title-actions">
+          <span class="dirty-indicator" *ngIf="dirty">Unsaved changes</span>
+          <button type="button" class="edit-toggle" (click)="toggleEditing()">
+            <span class="desktop-label">{{ isEditing ? 'Done editing' : 'Edit deck' }}</span>
+            <span class="mobile-label">{{ isEditing ? 'Done' : 'Edit' }}</span>
           </button>
         </div>
       </div>
-      <div class="filter-group">
-        <h4>Types</h4>
-        <div class="chip-list">
-          <button
-            type="button"
-            class="chip-toggle"
-            *ngFor="let type of (availableTypes$ | async) ?? []"
-            [class.active]="isTypeSelected(type)"
-            (click)="toggleType(type)"
-          >
-            {{ type }}
+
+      <section class="panel search-panel" *ngIf="isEditing" [class.collapsed]="compactSearchPanel">
+        <header class="search-panel-header">
+          <div>
+            <h3>Search card database</h3>
+            <p class="description">Use filters to find cards and add them to this deck.</p>
+          </div>
+          <button type="button" class="filter-toggle alt" (click)="toggleCompactSearchPanel()">
+            {{ compactSearchPanel ? 'Expand' : 'Collapse' }}
           </button>
+        </header>
+        <app-card-search-panel
+          *ngIf="!compactSearchPanel"
+          title="Search card database"
+          description="Use filters to find cards and add them to this deck."
+          [selectedCards]="working.cards"
+          [maxCopies]="MAX_COPIES"
+          (addCard)="addCard($event)"
+        />
+      </section>
+
+      <div class="manager-grid">
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Deck list</h3>
+            <div class="panel-actions">
+              <span class="panel-meta">Total cards: {{ totalCards(working.cards) }}</span>
+              <button type="button" class="view-toggle" (click)="toggleCardView()">
+                <span class="desktop-label">
+                  {{ showCardImages ? 'Show names' : 'Show images' }}
+                </span>
+                <span class="mobile-label">
+                  {{ showCardImages ? 'Names' : 'Images' }}
+                </span>
+              </button>
+              <div class="image-size-controls" *ngIf="showCardImages">
+                <span>Grid</span>
+                <div class="size-options">
+                  <button
+                    type="button"
+                    *ngFor="let option of IMAGE_COLUMN_OPTIONS"
+                    [class.active]="imageColumns === option"
+                    (click)="setImageColumns(option)"
+                  >
+                    {{ option }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ng-container *ngIf="isEditing; else deckNameDisplay">
+            <div class="rename-form">
+              <label for="deck-name">Deck name</label>
+              <div class="rename-controls">
+                <input
+                  id="deck-name"
+                  name="deck-name"
+                  type="text"
+                  [ngModel]="renameDraft"
+                  (ngModelChange)="onDeckNameChange($event)"
+                  required
+                />
+                <div class="rename-actions">
+                  <button type="button" class="secondary" (click)="openImport()">
+                    Import list
+                  </button>
+                  <button type="button" [disabled]="!dirty" (click)="saveDeck(player.id, deck.id)">
+                    Save deck
+                  </button>
+                  <button type="button" class="danger" (click)="deleteDeck(player.id, deck.id)">
+                    Delete deck
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <ng-template #deckNameDisplay>
+            <div class="name-display">
+              <p class="label">Deck name</p>
+              <p class="value">{{ renameDraft || 'Untitled Deck' }}</p>
+              <p class="muted">Click Edit deck to rename or import a new list.</p>
+            </div>
+          </ng-template>
+
+          <div class="mode-banner" *ngIf="!isEditing">
+            <strong>Viewing only.</strong> Start editing to adjust counts or add new cards.
+          </div>
+
+          <ng-container *ngIf="working.cards.length; else emptyDeck">
+            <ng-container
+              *ngFor="let section of categorizeCards(working.cards); trackBy: trackByCategory"
+            >
+              <h4 class="category-chip">{{ section.label }}</h4>
+              <ul
+                [ngClass]="{
+                  'image-view': showCardImages,
+                  'image-grid': showCardImages,
+                  'grid-cols-2': showCardImages && imageColumns === 2,
+                  'grid-cols-3': showCardImages && imageColumns === 3,
+                  'grid-cols-4': showCardImages && imageColumns === 4,
+                  'grid-cols-5': showCardImages && imageColumns === 5
+                }"
+              >
+                <li
+                  *ngFor="let card of section.entries; trackBy: trackByCardName"
+                  [class.image-view]="showCardImages"
+                >
+                  <div class="card-entry" *ngIf="!showCardImages">
+                    <span class="card-name">{{ card.name }}</span>
+                    <span class="card-count">x{{ card.count }}</span>
+                  </div>
+                  <div class="card-preview" *ngIf="showCardImages">
+                    <ng-container *ngIf="getCardImage(card.name) as cardImage; else nameFallback">
+                      <img
+                        class="card-thumb"
+                        [src]="cardImage"
+                        [alt]="card.name"
+                        loading="lazy"
+                        [appCardPreview]="{ title: card.name, imageUrl: cardImage }"
+                      />
+                    </ng-container>
+                    <ng-template #nameFallback>
+                      <span class="card-name placeholder">{{ card.name }}</span>
+                    </ng-template>
+                    <span class="card-count">x{{ card.count }}</span>
+                  </div>
+                  <div class="card-entry-actions" *ngIf="isEditing">
+                    <button type="button" (click)="decrementCard(card.name)">-</button>
+                    <button type="button" [disabled]="!canAdd(card.name)" (click)="addCard(card.name)">
+                      +
+                    </button>
+                    <button type="button" class="link" (click)="removeCard(card.name)">
+                      Remove
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </ng-container>
+          </ng-container>
+          <ng-container *ngIf="working.sideboard?.length">
+            <h4 class="section-title">Sideboard</h4>
+            <ul
+              class="sideboard-list"
+              [ngClass]="{
+                'image-view': showCardImages,
+                'image-grid': showCardImages,
+                'grid-cols-2': showCardImages && imageColumns === 2,
+                'grid-cols-3': showCardImages && imageColumns === 3,
+                'grid-cols-4': showCardImages && imageColumns === 4,
+                'grid-cols-5': showCardImages && imageColumns === 5
+              }"
+            >
+              <li *ngFor="let card of working.sideboard">
+                <ng-container *ngIf="showCardImages; else sideboardName">
+                  <div class="card-preview">
+                    <ng-container *ngIf="getCardImage(card.name) as sideImage; else sideFallback">
+                      <img
+                        class="card-thumb"
+                        [src]="sideImage"
+                        [alt]="card.name"
+                        loading="lazy"
+                        [appCardPreview]="{ title: card.name, imageUrl: sideImage }"
+                      />
+                    </ng-container>
+                    <ng-template #sideFallback>
+                      <span class="card-name placeholder">{{ card.name }}</span>
+                    </ng-template>
+                    <span class="card-count">x{{ card.count }}</span>
+                  </div>
+                </ng-container>
+                <ng-template #sideboardName>
+                  <span>{{ card.name }}</span>
+                  <span class="card-count">x{{ card.count }}</span>
+                </ng-template>
+              </li>
+            </ul>
+          </ng-container>
+        </section>
+
+      </div>
+
+      <div class="import-overlay" *ngIf="showImportModal" (click)="closeImport()">
+        <div class="import-modal" (click)="$event.stopPropagation()">
+          <h3>Import deck list</h3>
+          <textarea
+            rows="10"
+            placeholder="Paste deck list here"
+            [(ngModel)]="importText"
+          ></textarea>
+          <p class="error" *ngIf="importError">{{ importError }}</p>
+          <div class="modal-actions">
+            <button type="button" class="secondary" (click)="closeImport()">
+              Cancel
+            </button>
+            <button type="button" (click)="applyImport()">Import</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <ng-container *ngIf="searchResults$ | async as results">
-      <p class="placeholder" *ngIf="!results.length">No cards match those filters.</p>
-      <div class="results" *ngIf="results.length">
-        <article class="result" *ngFor="let card of results">
-          <img
-            class="result-preview"
-            [src]="card.imgUrl || card.filePath"
-            [alt]="card.name"
-            loading="lazy"
-          />
-          <div class="result-details">
-            <h4>{{ card.name }}</h4>
-            <p>{{ card.type || 'Unknown type' }} • {{ card.set || 'Unknown set' }}</p>
-            <p class="muted">
-              {{ card.colors.length ? card.colors.join(', ') : 'No color' }}
-            </p>
-          </div>
-          <div class="result-actions">
-            <span class="tracked" *ngIf="getDeckCount(card.name) as count">
-              In deck x{{ count }}
-            </span>
-            <button type="button" (click)="addToDeck(card)">Add to deck</button>
-          </div>
-        </article>
-      </div>
     </ng-container>
-  </article>
+  </ng-container>
+</ng-container>
 
-  <article class="panel deck-panel">
-    <div class="deck-header">
-      <h2>Deck list</h2>
-      <div class="deck-tools">
-        <span class="total">{{ totalCards }} card{{ totalCards === 1 ? '' : 's' }}</span>
-        <button type="button" (click)="clearDeck()" [disabled]="!deckEntries.length">
-          Clear deck
-        </button>
-      </div>
-    </div>
+<ng-template #emptyDeck>
+  <p class="placeholder">No cards in this deck yet.</p>
+</ng-template>
 
-    <ng-container *ngIf="deckEntries.length; else emptyDeck">
-      <ul>
-        <li *ngFor="let entry of deckEntries; trackBy: trackByCardName">
-          <div class="deck-card-info">
-            <strong>{{ entry.card.name }}</strong>
-            <p>{{ entry.card.type || 'Unknown type' }} • {{ entry.card.set || 'Unknown set' }}</p>
-            <p class="muted">
-              {{ entry.card.colors.length ? entry.card.colors.join(', ') : 'No color' }}
-            </p>
-          </div>
-          <div class="deck-card-actions">
-            <button type="button" (click)="decrement(entry.card.name)">-</button>
-            <span>x{{ entry.count }}</span>
-            <button type="button" (click)="increment(entry.card.name)">+</button>
-            <button type="button" class="link" (click)="remove(entry.card.name)">Remove</button>
-          </div>
-        </li>
-      </ul>
-    </ng-container>
-    <ng-template #emptyDeck>
-      <p class="placeholder">No cards yet. Start adding from the list on the left.</p>
-    </ng-template>
-  </article>
-</section>
+<ng-template #deckMissing>
+  <a class="back-link" routerLink="/">&larr; Back to main menu</a>
+  <div class="panel warning">
+    <h3>Deck not found</h3>
+    <p>The requested deck does not exist. Please choose another deck.</p>
+  </div>
+</ng-template>
+
+<ng-template #loadingDeck>
+  <p class="placeholder">Loading deck...</p>
+</ng-template>
+
+<ng-template #notFound>
+  <a class="back-link" routerLink="/">&larr; Back to main menu</a>
+  <div class="panel warning">
+    <h3>Player not found</h3>
+    <p>We could not locate that profile. Please return to the main menu.</p>
+  </div>
+</ng-template>

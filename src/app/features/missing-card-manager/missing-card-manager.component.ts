@@ -1,36 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import {
-  BehaviorSubject,
-  Observable,
-  combineLatest,
-  debounceTime,
-  distinctUntilChanged,
-  of,
-  switchMap,
-} from 'rxjs';
-import { MissingCardEntry, PlayerProfile } from '../../models/player-profile';
-import {
-  CardDatabaseService,
-  CardRecord,
-} from '../../services/card-database.service';
+import { Observable, of, switchMap } from 'rxjs';
+import { CardCountEntry, PlayerProfile } from '../../models/player-profile';
 import { UserDatabaseService } from '../../services/user-database.service';
+import { CardSearchPanelComponent } from '../../shared/card-search-panel/card-search-panel.component';
+import { CardDatabaseService, CardRecord } from '../../services/card-database.service';
+import { CardPreviewDirective } from '../../shared/card-preview.directive';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+
+type CardCategoryKey = 'Legend' | 'Runes' | 'Battlefield' | 'Other';
+
+interface CategorizedCardSection {
+  key: CardCategoryKey;
+  label: string;
+  entries: CardCountEntry[];
+}
+
+const CARD_CATEGORY_ORDER: { key: CardCategoryKey; label: string }[] = [
+  { key: 'Legend', label: 'Legends' },
+  { key: 'Runes', label: 'Runes' },
+  { key: 'Battlefield', label: 'Battlefield' },
+  { key: 'Other', label: 'Everything else' },
+];
 
 @Component({
   selector: 'app-missing-card-manager',
   standalone: true,
-  imports: [CommonModule, RouterModule, FormsModule],
+  imports: [CommonModule, RouterModule, CardSearchPanelComponent, CardPreviewDirective],
   templateUrl: './missing-card-manager.component.html',
   styleUrls: ['./missing-card-manager.component.css'],
 })
 export class MissingCardManagerComponent {
-  protected searchTerm = '';
-  protected showFilters = false;
-  private readonly searchTerm$ = new BehaviorSubject<string>('');
-  private readonly colorFilters$ = new BehaviorSubject<Set<string>>(new Set());
-  private readonly typeFilters$ = new BehaviorSubject<Set<string>>(new Set());
+  protected showCardImages = true;
+  protected readonly IMAGE_COLUMN_OPTIONS = [2, 3, 4, 5];
+  protected imageColumns = 4;
+  protected compactSearchPanel = true;
+
+  private cardLookup = new Map<string, CardRecord>();
 
   protected readonly player$: Observable<PlayerProfile | undefined> =
     this.route.paramMap.pipe(
@@ -42,38 +49,16 @@ export class MissingCardManagerComponent {
       })
     );
 
-  protected readonly availableColors = this.cardDatabase.getAvailableColors();
-  protected readonly availableTypes$ = this.cardDatabase.listTypes();
-
-  protected readonly searchResults$: Observable<CardRecord[]> =
-    combineLatest([
-      this.searchTerm$.pipe(debounceTime(200), distinctUntilChanged()),
-      this.colorFilters$,
-      this.typeFilters$,
-    ]).pipe(
-      switchMap(([term, colors, types]) =>
-        this.cardDatabase.search(
-          term,
-          Array.from(colors),
-          Array.from(types),
-          60
-        )
-      )
-    );
-
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly cardDatabase: CardDatabaseService,
-    private readonly userDatabase: UserDatabaseService
-  ) {}
-
-  protected onSearchTermChange(value: string): void {
-    this.searchTerm = value;
-    this.searchTerm$.next(value);
-  }
-
-  protected toggleFilters(): void {
-    this.showFilters = !this.showFilters;
+    private readonly userDatabase: UserDatabaseService,
+    private readonly destroyRef: DestroyRef,
+    private readonly cardDatabase: CardDatabaseService
+  ) {
+    this.cardDatabase
+      .indexedByName()
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((lookup) => (this.cardLookup = lookup));
   }
 
   protected addCard(playerId: string, cardName: string): void {
@@ -90,7 +75,7 @@ export class MissingCardManagerComponent {
 
   protected getTrackedCount(
     cardName: string,
-    missingCards: MissingCardEntry[]
+    missingCards: CardCountEntry[]
   ): number {
     return (
       missingCards.find(
@@ -99,38 +84,71 @@ export class MissingCardManagerComponent {
     );
   }
 
-  protected toggleColor(color: string): void {
-    const next = new Set(this.colorFilters$.value);
-    if (next.has(color)) {
-      next.delete(color);
-    } else {
-      next.add(color);
-    }
-    this.colorFilters$.next(next);
-  }
-
-  protected toggleType(type: string): void {
-    const next = new Set(this.typeFilters$.value);
-    if (next.has(type)) {
-      next.delete(type);
-    } else {
-      next.add(type);
-    }
-    this.typeFilters$.next(next);
-  }
-
-  protected isColorSelected(color: string): boolean {
-    return this.colorFilters$.value.has(color);
-  }
-
-  protected isTypeSelected(type: string): boolean {
-    return this.typeFilters$.value.has(type);
-  }
-
-  protected trackByCardName(
-    _: number,
-    card: MissingCardEntry | CardRecord
-  ): string {
+  protected trackByCardName(_: number, card: CardCountEntry): string {
     return card.name;
+  }
+
+  protected categorizeCards(cards: CardCountEntry[]): CategorizedCardSection[] {
+    const groups = new Map<CardCategoryKey, CardCountEntry[]>();
+    CARD_CATEGORY_ORDER.forEach(({ key }) => groups.set(key, []));
+    cards.forEach((entry) => {
+      const key = this.resolveCategory(entry.name);
+      groups.get(key)?.push(entry);
+    });
+    return CARD_CATEGORY_ORDER
+      .map(({ key, label }) => ({
+        key,
+        label,
+        entries: groups.get(key) ?? [],
+      }))
+      .filter((section) => section.entries.length);
+  }
+
+  protected trackByCategory(_: number, section: CategorizedCardSection): CardCategoryKey {
+    return section.key;
+  }
+
+  protected totalCards(cards: CardCountEntry[]): number {
+    return cards.reduce((sum, entry) => sum + entry.count, 0);
+  }
+
+  protected toggleCardView(): void {
+    this.showCardImages = !this.showCardImages;
+    if (!this.showCardImages) {
+      this.imageColumns = 4;
+    }
+  }
+
+  protected getCardImage(cardName: string): string | undefined {
+    const normalized = cardName?.trim().toLowerCase();
+    if (!normalized) {
+      return undefined;
+    }
+    const record = this.cardLookup.get(normalized);
+    return record?.imgUrl || record?.filePath;
+  }
+
+  protected setImageColumns(columns: number): void {
+    this.imageColumns = columns;
+  }
+
+  protected toggleCompactSearchPanel(): void {
+    this.compactSearchPanel = !this.compactSearchPanel;
+  }
+
+  private resolveCategory(cardName: string): CardCategoryKey {
+    const normalized = cardName.trim().toLowerCase();
+    const record = this.cardLookup.get(normalized);
+    const type = record?.type?.toLowerCase();
+    if (type === 'legend') {
+      return 'Legend';
+    }
+    if (type === 'rune') {
+      return 'Runes';
+    }
+    if (type === 'battlefield') {
+      return 'Battlefield';
+    }
+    return 'Other';
   }
 }

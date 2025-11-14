@@ -1,0 +1,88 @@
+<section class="panel">
+  <h3>{{ title }}</h3>
+  <p class="description">{{ description }}</p>
+  <input
+    type="search"
+    class="search-input"
+    [ngModel]="searchTerm"
+    (ngModelChange)="onSearchTermChange($event)"
+    placeholder="Search cards by name or type"
+    aria-label="Search cards"
+  />
+
+  <button type="button" class="filter-toggle" (click)="toggleFilters()">
+    {{ showFilters ? 'Hide filters' : 'Show filters' }}
+  </button>
+  <button type="button" class="filter-toggle alt" (click)="toggleView()">
+    {{ showImages ? 'Show names' : 'Show images' }}
+  </button>
+
+  <div class="filter-panel" *ngIf="showFilters">
+    <div class="filter-group">
+      <h4>Colors</h4>
+      <div class="chip-list">
+        <button
+          type="button"
+          class="chip-toggle"
+          *ngFor="let color of availableColors"
+          [class.active]="isColorSelected(color)"
+          (click)="toggleColor(color)"
+        >
+          {{ color }}
+        </button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <h4>Types</h4>
+      <div class="chip-list">
+        <button
+          type="button"
+          class="chip-toggle"
+          *ngFor="let type of (availableTypes$ | async) ?? []"
+          [class.active]="isTypeSelected(type)"
+          (click)="toggleType(type)"
+        >
+          {{ type }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngIf="searchResults$ | async as results">
+    <p class="placeholder" *ngIf="!results.length">No cards match those filters.</p>
+    <div class="results" *ngIf="results.length">
+      <article
+        class="result"
+        *ngFor="let card of results; trackBy: trackByCardName"
+        [class.card-view]="showImages"
+      >
+        <img
+          class="result-preview"
+          [src]="card.imgUrl || card.filePath"
+          [alt]="card.name"
+          loading="lazy"
+          [appCardPreview]="previewData(card)"
+        />
+        <div class="result-details" *ngIf="!showImages">
+          <h4>{{ card.name }}</h4>
+          <p>{{ readableType(card) }}</p>
+          <p class="muted">
+            {{ readableColors(card) }}
+          </p>
+        </div>
+        <div class="result-actions" *ngIf="!showImages">
+          <span class="tracked" *ngIf="getTrackedCount(card.name) as trackedCount">
+            In list x{{ trackedCount }}
+          </span>
+          <button
+            type="button"
+            [disabled]="!canAdd(card.name)"
+            (click)="requestAdd(card.name)"
+          >
+            +
+          </button>
+        </div>
+      </article>
+    </div>
+  </ng-container>
+</section>

@@ -4,21 +4,49 @@
   <h2 class="title">{{ player.displayName }}</h2>
   <div class="info-grid">
     <section class="panel">
-      <h3>Deck List</h3>
-      <ul>
-        <li *ngFor="let deck of player.deckList">{{ deck }}</li>
-      </ul>
+      <div class="panel-header">
+        <h3>Decks</h3>
+        <button class="chip" type="button" (click)="createDeck(player.id)">
+          + Add deck
+        </button>
+      </div>
+      <ng-container *ngIf="player.decks.length; else noDecks">
+        <ul class="deck-list">
+          <li class="deck-row" *ngFor="let deck of player.decks">
+            <button
+              type="button"
+              class="delete-icon"
+              (click)="deleteDeck(player.id, deck.id, $event)"
+            >
+              DEL
+            </button>
+            <a
+              class="deck-tile"
+              [routerLink]="['/players', player.id, 'decks', deck.id]"
+            >
+              <div class="deck-info">
+                <strong>{{ deck.name }}</strong>
+                <p class="muted">
+                  {{ deck.cards.length }} unique card{{ deck.cards.length === 1 ? '' : 's' }}
+                </p>
+              </div>
+              <span class="chip">Build</span>
+            </a>
+          </li>
+        </ul>
+      </ng-container>
     </section>
     <section class="panel">
       <div class="panel-header">
         <h3>Missing Cards</h3>
-        <a
+        <button
           class="chip"
+          type="button"
           [routerLink]="['/players', player.id, 'missing']"
           aria-label="Manage missing cards"
         >
           Manage
-        </a>
+        </button>
       </div>
       <ng-container *ngIf="player.missingCards.length; else emptyMissing">
         <ul>
@@ -34,6 +62,10 @@
 
 <ng-template #emptyMissing>
   <p class="placeholder">This player is not missing any cards.</p>
+</ng-template>
+
+<ng-template #noDecks>
+  <p class="placeholder">No decks yet. Create one to begin tracking cards.</p>
 </ng-template>
 
 <ng-template #notFound>

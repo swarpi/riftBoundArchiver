@@ -3,114 +3,119 @@
     &larr; Back to {{ player.displayName }}
   </a>
 
-  <h2 class="title">Missing cards for {{ player.displayName }}</h2>
+  <div class="title-bar">
+    <div>
+      <p class="mode-indicator editing">Managing missing cards</p>
+      <h2 class="title">Missing cards for {{ player.displayName }}</h2>
+      <p class="title-description">
+        Keep this list accurate so the group knows what to trade or bring.
+      </p>
+    </div>
+  </div>
+
+  <section class="panel search-panel" [class.collapsed]="compactSearchPanel">
+    <header class="search-panel-header">
+      <div>
+        <h3>Search card database</h3>
+        <p class="description">
+          Use filters to find cards you still need, then add copies.
+        </p>
+      </div>
+      <button type="button" class="filter-toggle alt" (click)="toggleCompactSearchPanel()">
+        {{ compactSearchPanel ? 'Expand' : 'Collapse' }}
+      </button>
+    </header>
+    <app-card-search-panel
+      *ngIf="!compactSearchPanel"
+      title="Search card database"
+      description="Use filters to find cards you still need, then add copies."
+      [selectedCards]="player.missingCards"
+      (addCard)="addCard(player.id, $event)"
+    />
+  </section>
+
   <div class="manager-grid">
     <section class="panel">
-      <h3>Current list</h3>
-      <p class="description">
-        Track how many copies are missing so trades stay organized.
-      </p>
-      <ng-container *ngIf="player.missingCards.length; else emptyList">
-        <ul>
-          <li *ngFor="let card of player.missingCards; trackBy: trackByCardName">
-            <div class="card-entry">
-              <span class="card-name">{{ card.name }}</span>
-              <span class="card-count">x{{ card.count }}</span>
+      <div class="panel-header">
+        <h3>Missing list</h3>
+        <div class="panel-actions">
+          <span class="panel-meta">Total cards: {{ totalCards(player.missingCards) }}</span>
+          <button type="button" class="view-toggle" (click)="toggleCardView()">
+            <span class="desktop-label">
+              {{ showCardImages ? 'Show names' : 'Show images' }}
+            </span>
+            <span class="mobile-label">
+              {{ showCardImages ? 'Names' : 'Images' }}
+            </span>
+          </button>
+          <div class="image-size-controls" *ngIf="showCardImages">
+            <span>Grid</span>
+            <div class="size-options">
+              <button
+                type="button"
+                *ngFor="let option of IMAGE_COLUMN_OPTIONS"
+                [class.active]="imageColumns === option"
+                (click)="setImageColumns(option)"
+              >
+                {{ option }}
+              </button>
             </div>
-            <div class="card-entry-actions">
-              <button type="button" (click)="decrementCard(player.id, card.name)">
-                -
-              </button>
-              <button type="button" (click)="addCard(player.id, card.name)">
-                +
-              </button>
-              <button type="button" class="link" (click)="removeCard(player.id, card.name)">
-                Remove
-              </button>
-            </div>
-          </li>
-        </ul>
-      </ng-container>
-    </section>
-
-    <section class="panel">
-      <h3>Search card database</h3>
-      <p class="description">
-        Use the filters to narrow down the results, then add as many copies as you need.
-      </p>
-      <input
-        type="search"
-        class="search-input"
-        [ngModel]="searchTerm"
-        (ngModelChange)="onSearchTermChange($event)"
-        placeholder="Search cards by name or type"
-        aria-label="Search cards"
-      />
-
-      <button type="button" class="filter-toggle" (click)="toggleFilters()">
-        {{ showFilters ? 'Hide filters' : 'Show filters' }}
-      </button>
-
-      <div class="filter-panel" *ngIf="showFilters">
-        <div class="filter-group">
-          <h4>Colors</h4>
-          <div class="chip-list">
-            <button
-              type="button"
-              class="chip-toggle"
-              *ngFor="let color of availableColors"
-              [class.active]="isColorSelected(color)"
-              (click)="toggleColor(color)"
-            >
-              {{ color }}
-            </button>
-          </div>
-        </div>
-        <div class="filter-group">
-          <h4>Types</h4>
-          <div class="chip-list">
-            <button
-              type="button"
-              class="chip-toggle"
-              *ngFor="let type of (availableTypes$ | async) ?? []"
-              [class.active]="isTypeSelected(type)"
-              (click)="toggleType(type)"
-            >
-              {{ type }}
-            </button>
           </div>
         </div>
       </div>
-
-      <ng-container *ngIf="searchResults$ | async as results">
-        <p class="placeholder" *ngIf="!results.length">No cards match those filters.</p>
-        <div class="results" *ngIf="results.length">
-          <article
-            class="result"
-            *ngFor="let card of results; trackBy: trackByCardName"
+      <ng-container *ngIf="player.missingCards.length; else emptyList">
+        <ng-container
+          *ngFor="let section of categorizeCards(player.missingCards); trackBy: trackByCategory"
+        >
+          <h4 class="category-chip">{{ section.label }}</h4>
+          <ul
+            [ngClass]="{
+              'image-grid': showCardImages,
+              'grid-cols-2': showCardImages && imageColumns === 2,
+              'grid-cols-3': showCardImages && imageColumns === 3,
+              'grid-cols-4': showCardImages && imageColumns === 4,
+              'grid-cols-5': showCardImages && imageColumns === 5
+            }"
           >
-            <img
-              class="result-preview"
-              [src]="card.imgUrl || card.filePath"
-              [alt]="card.name"
-              loading="lazy"
-            />
-            <div class="result-details">
-              <h4>{{ card.name }}</h4>
-              <p>{{ card.type || 'Unknown type' }} • {{ card.set || 'Unknown set' }}</p>
-              <p class="muted">{{ card.colors.length ? card.colors.join(', ') : 'No color' }}</p>
-            </div>
-            <div class="result-actions">
-              <span
-                class="tracked"
-                *ngIf="getTrackedCount(card.name, player.missingCards) as trackedCount"
-              >
-                Tracking x{{ trackedCount }}
-              </span>
-              <button type="button" (click)="addCard(player.id, card.name)">Add copy</button>
-            </div>
-          </article>
-        </div>
+            <li
+              *ngFor="let card of section.entries; trackBy: trackByCardName"
+              [class.image-view]="showCardImages"
+            >
+              <div class="card-entry" *ngIf="!showCardImages">
+                <span class="card-name">{{ card.name }}</span>
+                <span class="card-count">x{{ card.count }}</span>
+              </div>
+              <div class="card-preview" *ngIf="showCardImages">
+                <ng-container *ngIf="getCardImage(card.name) as cardImage; else missingFallback">
+                  <img
+                    class="card-thumb"
+                    [src]="cardImage"
+                    [alt]="card.name"
+                    loading="lazy"
+                    [appCardPreview]="{ title: card.name, imageUrl: cardImage }"
+                  />
+                </ng-container>
+                <ng-template #missingFallback>
+                  <span class="card-name placeholder">{{ card.name }}</span>
+                </ng-template>
+                <span class="card-count">x{{ card.count }}</span>
+              </div>
+              <div class="card-entry-actions">
+                <div class="action-buttons">
+                  <button type="button" (click)="decrementCard(player.id, card.name)">
+                    -
+                  </button>
+                  <button type="button" (click)="addCard(player.id, card.name)">
+                    +
+                  </button>
+                </div>
+                <button type="button" class="link" (click)="removeCard(player.id, card.name)">
+                  Remove
+                </button>
+              </div>
+            </li>
+          </ul>
+        </ng-container>
       </ng-container>
     </section>
   </div>
